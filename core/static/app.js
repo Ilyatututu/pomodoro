@@ -4,7 +4,7 @@ let mainMinutes = 25;
 let mainHours = 0;
 let mainIsTimerRunning = false;
 
-const audio = new Audio('static/media/audio/Airtel Mp3 - Airtel Song.mp3');
+const audio = new Audio('static/media/audio/end.mp3');
 
 function startMainTimer() {
     if (!mainIsTimerRunning) {
@@ -175,7 +175,7 @@ function resetITimer(timerId) {
 }
 
 function timerComplete(timerId) {
-    const audio1 = new Audio('static/media/audio/Airtel Mp3 - Airtel Song.mp3');
+    const audio1 = new Audio('static/media/audio/end.mp3');
     console.log("Played...");
     audio1.play();
 }
