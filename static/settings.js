@@ -10,22 +10,17 @@ function saveSettings() {
     const newMainMinutes = parseInt(document.getElementById('mainMinutes').value) || 25;
     const newMainSeconds = parseInt(document.getElementById('mainSeconds').value) || 0;
 
-    // Изменить цвет фона
     document.body.style.backgroundColor = selectedColor;
 
-    // Изменить время основного таймера
     mainHours = newMainHours;
     mainMinutes = newMainMinutes;
     mainSeconds = newMainSeconds;
 
-    // Обновить отображение таймера
     updateMainTimerDisplay();
 
-    // Обновить аудио для таймера
-    audio = new Audio(selectedMusic); // Обновляем глобальную переменную audio
+    audio = new Audio(selectedMusic);
     audio.load();
 
-    // Закрыть модальное окно
     const settingsModal = bootstrap.Modal.getInstance(document.getElementById('settingsModal'));
     settingsModal.hide();
 }
