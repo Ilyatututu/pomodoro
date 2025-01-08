@@ -4,7 +4,7 @@ let mainMinutes = 25;
 let mainHours = 0;
 let mainIsTimerRunning = false;
 
-let audio; // Глобальная переменная для аудио
+let audio;
 
 function startMainTimer() {
     if (!mainIsTimerRunning) {
@@ -47,7 +47,7 @@ function updateMainTimerDisplay() {
 
 function timerComplete() {
     if (audio) {
-        audio.play(); // Воспроизведение музыки
+        audio.play();
     }
 }
 
@@ -179,7 +179,7 @@ function resetITimer(timerId) {
 function timerComplete(timerId) {
     console.log("Played...");
     if (audio) {
-        audio.play(); // Воспроизведение музыки
+        audio.play();
     }
 }
 
